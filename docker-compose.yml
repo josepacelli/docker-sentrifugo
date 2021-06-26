@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile-sentrifugo
-    container_name: sentrifugo
+    image: atlantatecnologia/sentrifugo:app
     ports:
       - "8080:80"
       - "8443:443"
@@ -16,6 +16,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile-mariadb
-    container_name: mariadb
+    image: atlantatecnologia/sentrifugo:mariadb
     #ports:
     #  - "3306:3306"
